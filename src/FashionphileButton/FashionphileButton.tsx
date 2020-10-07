@@ -4,7 +4,7 @@ import { FashionphileButtonProps } from "./FashionphileButton.types";
 
 import "./FashionphileButton.scss";
 
-const FashionphileButton: React.FC<FashionphileButtonProps> = ({ status='on', size='btn-lg', theme='primary', content='click me', onPress }) => {
+const FashionphileButton: React.FC<FashionphileButtonProps> = ({ status='on', size='btn-lg', theme='primary', content='Lorem ipsum', onPress }) => {
   const handleOnClick = () => {
     if(onPress){
       onPress()
