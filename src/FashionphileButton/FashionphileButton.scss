@@ -25,6 +25,7 @@
     color: $color-white;
     &:hover {
       background-color: $color-grey-7;
+      border: 0.0625rem solid $color-grey-7;
       text-decoration-line: underline;
     }
   }
