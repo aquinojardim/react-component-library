@@ -23,6 +23,10 @@
     background-color: $color-black;
     border: 0.0625rem solid $color-black;
     color: $color-white;
+    &:hover {
+      background-color: $color-grey-7;
+      text-decoration-line: underline;
+    }
   }
 
   &.fashionphile-button-primary-off {
@@ -35,6 +39,10 @@
     background-color: none;
     border: none;
     color: $color-black;
+    &:hover {
+      background-color: $color-blue;
+      text-decoration-line: underline;
+    }
   }
 
   &.fashionphile-button-secondary-off {
@@ -47,6 +55,9 @@
     background-color: $color-pink;
     border: 0.0625rem solid $color-pink;
     color: $color-white;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 
   &.fashionphile-button-pink-off {
@@ -59,6 +70,11 @@
     background-color: none;
     border: 0.0625rem solid $color-black;
     color: $color-black;
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+      text-decoration-line: underline;
+    }
   }
 
   &.fashionphile-button-ghost-black-off {
@@ -71,6 +87,10 @@
     background-color: none;
     border: 0.0625rem solid $color-white;
     color: $color-white;
+    &:hover {
+      color: $color-black;
+      text-decoration-line: underline;
+    }
   }
 
   &.fashionphile-button-ghost-white-off {
