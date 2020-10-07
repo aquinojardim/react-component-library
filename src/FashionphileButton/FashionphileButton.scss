@@ -1,0 +1,81 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
+.fashionphile-button {
+  @include font-defaults;
+  width: 8.25rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8681rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0.2168rem;
+  text-transform: uppercase;
+  
+  &.fashionphile-button-btn-lg {
+    padding: 1rem 2rem;
+  }
+
+  &.fashionphile-button-btn-sm {
+    padding: 0.5rem 1rem;
+  }
+
+  &.fashionphile-button-primary-on {
+    background-color: $color-black;
+    border: 0.0625rem solid $color-black;
+    color: $color-white;
+  }
+
+  &.fashionphile-button-primary-off {
+    background-color: $color-grey-7;
+    border: 0.0625rem solid $color-grey-7;
+    color: $color-grey-5;
+  }
+
+  &.fashionphile-button-secondary-on {
+    background-color: none;
+    border: none;
+    color: $color-black;
+  }
+
+  &.fashionphile-button-secondary-off {
+    background-color: none;
+    border: none;
+    color: $color-grey-5;
+  }
+
+  &.fashionphile-button-pink-on {
+    background-color: $color-pink;
+    border: 0.0625rem solid $color-pink;
+    color: $color-white;
+  }
+
+  &.fashionphile-button-pink-off {
+    background-color: $color-pink-light;
+    border: 0.0625rem solid $color-pink-light;
+    color: $color-grey-7;
+  }
+
+  &.fashionphile-button-ghost-black-on {
+    background-color: none;
+    border: 0.0625rem solid $color-black;
+    color: $color-black;
+  }
+
+  &.fashionphile-button-ghost-black-off {
+    background-color: none;
+    border: 0.0625rem solid $color-grey-7;
+    color: $color-grey-7;
+  }
+
+  &.fashionphile-button-ghost-white-on {
+    background-color: none;
+    border: 0.0625rem solid $color-white;
+    color: $color-white;
+  }
+
+  &.fashionphile-button-ghost-white-off {
+    background-color: none;
+    border: 0.0625rem solid $color-grey-7;
+    color: $color-grey-7;
+  }
+}

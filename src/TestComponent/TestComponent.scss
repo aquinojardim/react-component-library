@@ -2,18 +2,46 @@
 @import "../typography.scss";
 
 .test-component {
-  background-color: $harvey-white;
-  border: 1px solid $harvey-black;
+  @include font-defaults;
   padding: 16px;
   width: 360px;
   text-align: center;
 
-  .heading {
-    @include heading;
+  .header {
+    @include header;
+  }
+
+  .body {
+    @include body;
+  }
+  
+  &.test-component-primary {
+    background-color: $color-black;
+    border: 1px solid $color-black;
+    color: $color-white;
   }
 
   &.test-component-secondary {
-    background-color: $harvey-black;
-    color: $harvey-white;
+    background-color: none;
+    border: none;
+    color: $color-black;
+  }
+
+  &.test-component-pink {
+    background-color: $color-pink;
+    border: 1px solid $color-pink;
+    color: $color-white;
+  }
+
+  &.test-component-ghost-black{
+    background-color: none;
+    border: 1px solid $color-black;
+    color: $color-black;
+  }
+
+  &.test-component-ghost-white {
+    background-color: $color-pink-light;
+    border: 1px solid $color-white;
+    color: $color-white;
   }
 }

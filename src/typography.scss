@@ -1,12 +1,23 @@
-$font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+@import "~fontsource-metropolis/index.css";
+
+$font-family: "Metropolis";
 
 @mixin font-defaults {
   font-family: $font-family;
 }
 
-@mixin heading {
+@mixin header {
   @include font-defaults;
+  font-weight: 500 (semibold);
+  text-transform: uppercase;
+  line-height: 1.4em;
+  letter-spacing: .25em;
+}
 
-  font-size: 40px;
-  font-weight: bold;
+@mixin body {
+  @include font-defaults;
+  font-weight: 300 (light);
+  text-transform: none;
+  line-height: 1.7em;
+  letter-spacing: .125em;
 }
